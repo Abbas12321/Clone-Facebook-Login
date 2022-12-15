@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-log in or sign up</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+.my-login-outermost-container{
+    background-color: #f0f2f5;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-login-outer-container{
+    width: 75%;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my-login-container-left{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-login-container-left img{
+    width: 300px;
+}
+
+.my-login-container-left p{
+    padding-left: 35px;
+}
+
+.my-login-container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.my-login-container-right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 370px;
+}
+
+.my-login-container-right form input{
+    font-size: 16px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid rgb(238, 238, 238);
+    margin: 5px 0px;
+    width: 100%;
+}
+
+#login_submit_btn{
+    background-color: #1877f2;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding: 0px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#forget_pass{
+    color: #1877f2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.forgotter{
+    width: 100%;
+}
+
+hr{
+    margin: 15px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+#register_acc{
+    background-color: #42B72A;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.my-login-container-right p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    font-size: 15px;
+}
+</style>
+<body>
+    <div class="my-login-outermost-container">
+        <div class="my-login-outer-container">
+            <div class="my-login-container-left">
+                <img src="facebook.png" alt="" >
+                <p>Facebook helps you connect and share <br>with the people in your life.</p>
+            </div>
+
+            <div class="my-login-container-right">
+                <form method="POST" action="form_submit">
+                    <input type="email" name="email" id="user_email" placeholder="   Email address or phone number">
+                    <input type="password" name="password" id="password" placeholder="   Password">
+                    <input type="submit" id="login_submit_btn" value="Log in">
+                    <a href="#" id="forget_pass" >Forgotten password?</a>
+                    <div class="forgotter"><hr></div>
+                    <button id="register_acc">Create New Account</button>
+                </form>
+                <p><b>Create a Page </b> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
